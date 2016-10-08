@@ -1,0 +1,14 @@
+var isCorrect = false;
+
+while (isCorrect === false) {
+	var userName = prompt("Name?");
+	var isOk = confirm("Are you sure it's really " + userName + "?");
+	if (isOk) {
+		isCorrect = true; 
+	}
+	else {
+		isCorrect = false; 
+	}
+}
+
+alert("Hi " + userName);
